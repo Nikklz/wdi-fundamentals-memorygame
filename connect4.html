@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="connect4.js"></script>
+	<script src="connect4.css"></script>
+	<style>
+	.item1 { grid-area: header; 
+		text-align: center;}
+		.item2 { grid-area: menu;
+			text-align: center;}
+			.table, th, td { 
+				grid-area: main;
+				border: 1px solid black}
+				.item3 { grid-area: footer; 
+					text-align: center;}
+					.grid-container {
+						display: grid;
+						grid-template:
+						'header header header header header header'
+						'menu main main main main main'
+						'menu footer footer footer footer footer';
+						grid-gap: 10px;
+						border: 5px ;
+						margin: 20px;
+						padding: 10px;
+						background-color: #2196F3;
+					}
+					.grid-container>div {
+						background-color: rgba(255, 255, 255, 0.8);
+						padding:20px 0;
+						font-size: 30px;
+					}
+					table#t01 {
+						border-collapse: collapse;
+
+					}
+				</style>
+			</head>
+			<body>
+
+				<div class="grid-container">
+					<div class="item1">Connect Four</div>
+					<div class="item2">Menu</div>
+					<div class="table"> 
+						<table id="t01" style="width:100%">
+							<tr>
+								<th id='a'>A</th>
+								<th>B</th> 
+								<th>C</th>
+								<th>D</th>
+								<th>E</th>
+								<th>F</th>
+								<th>G</th>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+								<tr>
+								<td>3</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>	
+							<tr>
+								<td>4</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>	
+							<tr>
+								<td>5</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>	
+							<tr>
+								<td>6</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+					<div class="item3">Footer</div>
+
+				</div>
+
+			</body>
+			</html>
+
